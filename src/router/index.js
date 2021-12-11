@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Prismic from '../views/Prismic.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
+    name: 'prismic',
+    component: Prismic
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home
   },

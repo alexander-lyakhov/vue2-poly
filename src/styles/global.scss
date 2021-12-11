@@ -1,0 +1,26 @@
+﻿.center-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.inline {
+  display: inline-block;
+}
+
+@mixin mobile {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}

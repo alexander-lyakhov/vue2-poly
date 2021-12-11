@@ -1,0 +1,40 @@
+﻿$fc-primary: #e0e0e0;
+$fc-secondary: #c0c0c0;
+$fc-middle: #808080;
+
+$fc-title: #406080;
+$fc-accent: #f0c000;
+$bg-accent: #ea0;
+
+$theme: (
+  body: (
+    fc: $fc-primary,
+    bg: #404040,
+  ),
+  parcel: (
+    fc: #303030,
+    bg: #f0f0f0,
+
+    header: (
+      fc: $fc-primary,
+      bg: #406080,
+    ),
+
+    body: (
+      fc: #303030,
+      bg: #e0e0e0,
+    ),
+
+    footer: (
+      fc: #303030,
+      bg: #f0f0f0,
+    ),
+  )
+);
+
+$body: map-get($theme, body);
+
+$parcel: map-get($theme, parcel);
+$parcel-header: map-get($parcel, header);
+$parcel-body: map-get($parcel, body);
+$parcel-footer: map-get($parcel, footer);
